@@ -4,7 +4,7 @@
 
 double FindDistance (int x1, int y1, int z1, int x2, int y2, int z2)
 {
-    double distance = Math.Sqrt((x2-x1)*(x2-x1)+(y2-y1)*(y2-y1)+(z2-z1)*(z2-z1));
-    return distance;    
+    double distance = Math.Sqrt(Math.Pow(x2-x1, 2)+Math.Pow(y2-y1, 2)+Math.Pow(z2-z1, 2));
+    return distance;
 }
-   Console.WriteLine(FindDistance(7, -5, 0, 1, -1, 9));
+   Console.WriteLine(FindDistance(3, 6, 8, 2, 1, -7));
